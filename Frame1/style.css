@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1b1a1a; 
+    padding: 10px 20px; 
+    display: flex; 
+    align-items: center; 
+}
+
+
+nav {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   
+    
+}
+
+
+.logo {
+    height: 50px;
+    
+  
+   
+}
+
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+nav ul li {
+    margin: 0 20px; 
+}
+
+
+nav ul li a {
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+
+nav ul li a:hover {
+    color: #ff4141; 
+    transition: color 0.3s ease; 
+}
+
+/*kraj stila za header*/
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; 
+    color: #fff; 
+}
+
+/* Generalni stilovi */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; 
+    color: #fff; 
+}
+
+.glavna-sekcija {
+    display: flex; /* Aktivira Flexbox */
+    justify-content: center; /* Razmak između tekstualnog i slikovnog dela */
+    align-items: center; /* Vertikalno poravnanje elemenata */
+    width: 1070px; /* Fiksna širina hero sekcije */
+    height: 756px; /* Fiksna visina glavne */
+margin: 0 auto; /* Centrira na stranici */
+
+ 
+}
+
+/* Tekstualni deo */
+.tekst-sekcija {
+    flex: 1; /* Tekst zauzima ravnomerni deo prostora */
+    padding-left: 20px;
+
+}
+
+.tekst-sekcija h1 {
+    font-size: 79px; 
+    color: #a00000;
+    margin: 0;
+    
+}
+
+.tekst-sekcija h2 {
+    font-size: 36px; /* Podnaslov */
+    margin: 15px 0;
+}
+
+.tekst-sekcija p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* Slikovni deo */
+.image-section {
+    flex: 1; /* Slikovni deo zauzima ravnomerni deo prostora */
+    position: relative; /* Za apsolutno pozicioniranje unutar ove sekcije */
+   
+}
+
+
+ 
+#img2 {
+    position: absolute;
+    top: 50%; /* Pero centrirano vertikalno */
+    left: -180px; /* Pomeranje pera ulevo */
+    transform: translateY(10%); /* Vertikalno centriranje */
+    width: 100px; 
+    border: none;
+}
+
+#img1 {
+
+  width: 200px; /* Dimenzije portreta */
+  height: auto; 
+  border-radius: 20px; 
+ /*  border: 2px solid #fff; /* Bela ivica */
+  box-shadow: 0 4px 6px rgba(145, 142, 142, 0.493);
+  position: absolute;
+  top: 70%; /* Pomeranje slike nize */
+  left: -95px; /* Pero sa lijeve strane */
+  transform: translateY(-50%); /* vertikalno centriranje */
+  z-index: -1; /* Portret iznad pera ili teksta */
+    
+    
+}
+
+#img3 {
+    display: flex;
+    justify-content: center;
+    width: 639.91px;
+    height: 639.91px;
+    top: 1400.91px;
+    left: 998.5px;
+    gap: 0px;
+    opacity: 0px;
+    rotate: 181.86deg;
+    
+}
+
+/* stilovi za drugu polovinu framea:*/
+
+
+.hero2 {
+     background-color: rgba(84, 0, 0, 1);
+     width: 80%;
+     height: 525px;
+     justify-self: center;
+
+
+
+}
+#x2  {
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1)
+    
+}
+
+#x2::before {
+    content: "";
+    flex: 1;
+    border-top: 2px solid #fff5f5;
+    margin: 35px 10px 0 10px;
+
+   
+  
+   
+}
+
+#x2::after {
+   
+    content: "";
+    flex: 1;
+    border-top: 2px solid #ffffff;
+    margin: 35px 10px 0 10px;
+    
+   
+    
+
+}
+
+
+.sec {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+
+   
+#book1, #book2, #book3 {
+    width: 250px; /* Standardizovana širina za sve slike */
+    height: 400px; /* Standardizovana visina za sve slike */
+    object-fit: cover; /* Prilagođava slike bez izobličenja */
+    position: relative; /* Ako se koristi `top` i `left` */
+    margin: 0 10px; /* Jednolik razmak između slika */
+    opacity: 1; /* Prikazuje slike */
+    transform: none; /* Uklanja rotaciju */
+}
+
+#book1 {
+    top: 0;
+    left: 0;
+}
+
+#book2 {
+    top: 40px;
+    left: 0;
+}
+
+#book3 {
+    width: 150px;
+    height: 250px;
+    top: 75px;
+    left: 50px;
+    rotate: 359.42deg;
+}
+
+ #img3 {
+
+    rotate: 360deg;
+    border: 5px solid white;
+    z-index: 1;
+}
+    
+
+  
+    
+.thrd{
+    display: flex;
+    justify-content: center;
+
+}
+
+#vid {
+width: 1070px;
+height: 525px;
+top: 1444px;
+left: 54px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+
+/*futer*/
+.futer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+
+
+   
+
+  }
+
+  .futer .info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .futer .info div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .futer .info div img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .futer .social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .futer .social a {
+    text-decoration: none;
+    color: #f00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #f00;
+    border-radius: 50%;
+  }
+
+  .futer .social a:hover {
+    background-color: #f00;
+    color: #000;
+  }
